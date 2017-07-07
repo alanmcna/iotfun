@@ -1,0 +1,50 @@
+<html>
+<head>
+<!-- Load c3.css -->
+<link href="c3/c3.css" rel="stylesheet">
+
+</head>
+<body onload="redraw()">
+<div id="chart"></div>
+<!-- Load d3.js and c3.js -->
+<script src="d3/d3.min.js"></script>
+<script src="c3/c3.js"></script>
+<script>
+
+function redraw() {
+    var interval = 60000;
+
+    // work out current frame number
+    var now = new Date().getTime();
+
+    // retrigger
+    var msecs = new Date().getTime() % interval;
+
+    c3.generate({
+        size: {
+            width: 940,
+            height: 600
+        },
+        bindto: '#chart',
+        data: {
+            x: 'x',
+            xFormat: '%Y-%m-%d %H:%M:%S',
+            url: 'chart.json',
+            mimeType: 'json'
+        },
+        axis: {
+            x: {
+                type: 'timeseries',
+                tick: {
+                    format: '%H:%M:%S'
+                }
+            }
+        }
+    });
+    setTimeout(redraw, interval - msecs);
+    console.log("Redraw complete at " + now);
+}
+
+</script>
+</body>
+</html>
