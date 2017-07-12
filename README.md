@@ -17,8 +17,8 @@ In this example I'm using an Adafruit MCP3008 analog to digital converter with a
 - Copy the supervisor file into /etc/supervisor/conf.d
 
 #### Links
-https://github.com/adafruit/Adafruit_Python_MCP3008
-https://www.dfrobot.com/wiki/index.php/UV_Sensor_v1.0-ML8511_SKU:SEN0175
+- https://github.com/adafruit/Adafruit_Python_MCP3008
+- https://www.dfrobot.com/wiki/index.php/UV_Sensor_v1.0-ML8511_SKU:SEN0175
 
 ### Web / API
 
