@@ -39,7 +39,7 @@ while True:
     outputVoltage = 3.3 * float(mcp.read_adc(0)) / 1023
     uvIntensity = mapfloat(outputVoltage, 0.99, 2.9, 0.0, 15.0);
     if ( uvIntensity != last ):
-        print "INFO: UV Index = {:f}".format(uvIntensity)
+        # print "INFO: UV Index = {:f}".format(uvIntensity)
         cur.execute("INSERT INTO reading (name, value) VALUES (%s, %s)", ("UV Index", str(uvIntensity)))
         conn.commit()
         last = uvIntensity
