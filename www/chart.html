@@ -30,7 +30,10 @@ function redraw() {
             x: 'x',
             xFormat: '%Y-%m-%d %H:%M:%S',
             url: 'chart.json',
-            mimeType: 'json'
+            mimeType: 'json',
+            //types: {
+            //    'UV Index': 'spline'
+            //}
         },
         axis: {
             x: {
@@ -38,6 +41,10 @@ function redraw() {
                 tick: {
                     format: '%H:%M:%S'
                 }
+            },
+            y: {
+//                max: 11,
+                min: 0,
             }
         }
     });

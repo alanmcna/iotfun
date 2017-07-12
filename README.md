@@ -1,6 +1,8 @@
 # iotfun
 Look at a pi based startdard IoT build
 
+## Set-up
+
 - Get C3 
 -- cd www
 -- wget https://github.com/c3js/c3/archive/v0.4.14.zip
@@ -12,3 +14,9 @@ Look at a pi based startdard IoT build
 -- cd www
 -- wget https://github.com/d3/d3/releases/download/v3.5.17/d3.zip
 -- unzip d3.zip
+
+## Todo 
+
+- supervisord to start up the sensor script(s)
+-- move sensor scripts into a (.d) folder for sequential execution
+- Ansible (pi) build
