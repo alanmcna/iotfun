@@ -1,5 +1,5 @@
 # iotfun
-Look at a pi based startdard IoT build
+Long term goal of mine is to be able to spin up raspberry pis (zeros ideally) to do remote 'sensing' within wifi range. My first sensor was a IR camera my second is a UV sensor so now I'm seeing the need for consistency in set-up, reporting and centralised view.
 
 ## Set-up 
 
@@ -25,17 +25,14 @@ In this example I'm using an Adafruit MCP3008 analog to digital converter with a
 - Build JSON from the data being recorded in the DB makeC3JSON.py
 -- Currently I'm running this from cron and writing stdout to the web folder
 - Install the dependencies to get the chart.html working
-    - Get C3 
+    - Get C3 and D3 (last v3 version to work with C3)
 ```
 cd www
 wget https://github.com/c3js/c3/archive/v0.4.14.zip
 unzip v0.4.14.zip
 ln -s c3-0.4.14 c3
 rm v0.4.14.zip
-```
-    - get D3 (last v3 version to work with C3)
-```
-cd www
+
 wget https://github.com/d3/d3/releases/download/v3.5.17/d3.zip
 unzip d3.zip
 ```
