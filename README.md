@@ -1,6 +1,8 @@
 # iotfun
 Long term goal of mine is to be able to spin up raspberry pis (zeros ideally) to do remote 'sensing' within wifi range. My first sensor was a IR camera my second is a UV sensor so now I'm seeing the need for consistency in set-up, reporting and centralised view.
 
+This MVP is just getting a single sensor recording to a DB, generation of a JSON (MVP API/static feed) and visualisation. Looking to build on this in a more generic fashion going forward.
+
 ## Set-up 
 
 ### Base
